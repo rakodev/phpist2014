@@ -1,0 +1,15 @@
+h2 {
+    color: #d63254;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    background-position: -146px -644px;
+    margin: 15px 0;
+}
+
+
+h2 span{
+    display: inline-block;
+    background: #FFF;
+    padding: 0 5px;
+}
