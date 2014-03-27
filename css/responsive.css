@@ -48,7 +48,8 @@ body {}
         margin: 0 auto;
     }
 
-    #sponsors ul {
+    #sponsors ul,
+    #organizer ul{
         width: 500px;
         margin: 0 auto;
     }
@@ -97,7 +98,8 @@ body {}
         margin: 0 auto;
     }
 
-    #sponsors ul {
+    #sponsors ul,
+    #organizer ul{
         width: 500px;
         margin: 0 auto;
     }

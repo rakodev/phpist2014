@@ -1,14 +1,19 @@
-#sponsors {
+#sponsors,
+#organizer,
+#becomeSponsor{
    text-align: center;
     overflow: hidden;
 }
 
-#sponsors ul {
+#sponsors ul,
+#organizer ul{
     overflow: auto;
     width: 1000px;
+    list-style-type: none;
 }
 
-#sponsors ul li {
+#sponsors ul li,
+#organizer ul li{
     height: 90px;
     width: 190px;
     padding: 15px;
@@ -20,6 +25,13 @@
     overflow: hidden;
 }
 
+#sponsors .platin {
+    width: 380px;
+    margin-right: 50px;
+}
+#sponsors .platin:first {
+    margin-right: 50px;
+}
 
 #supporters {
     text-align: center;
@@ -53,7 +65,7 @@
 .taMiddle{
     margin-right: auto;
     margin-left: auto;
-    width: 300px;
+    /*width: 300px;*/
     padding: 20px;
 }
 
