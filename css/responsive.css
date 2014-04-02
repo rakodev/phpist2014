@@ -14,7 +14,6 @@ body {}
     header nav {
         padding-right: 10px;
     }
-
 }
 
 
@@ -32,7 +31,15 @@ body {}
 
     footer small { left: 5px;}
     footer #designer { right: 5px;}
-
+     
+     #program ul li .programTextLarge{
+        width:50px !important;
+        overflow: hidden;
+    }
+    .label-clock-large{
+        width:50px !important;
+        overflow: hidden !important;
+    }
     #program ul {
         width: 500px;
         margin: 0 auto;
@@ -40,7 +47,7 @@ body {}
 
 
     #program ul li.lunch {
-        width: 435px;
+        width: 200px;
     }
 
     #speakers ul {
@@ -104,7 +111,10 @@ body {}
         margin: 0 auto;
     }
 
-
+    #program ul li .programTextLarge{
+        width:50px !important;
+        overflow: hidden;
+    }
 
     #program ul li.lunch small {
         left: 70px;
@@ -182,6 +192,11 @@ body {}
     #top .text #elephant {
         top: 450px;
         left: 20%;
+    }
+
+    #program ul li .programTextLarge{
+        width:50px !important;
+        overflow: hidden;
     }
 
 
