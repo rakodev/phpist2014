@@ -232,3 +232,13 @@ footer {
   padding: 0px 10px 10px 10px;
   font-weight: bold;
 }
+.registerToEvent{
+  color:#fff;
+}
+.registerToEvent,
+.registerToEvent:link,
+.registerToEvent:visited,
+.registerToEvent:hover,
+.registerToEvent:active {
+  color:#fff;
+}
