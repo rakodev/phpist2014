@@ -9,8 +9,28 @@ var setSectionHeight = function() {
 	$('.section > .inner').css('min-height', winHeight);
 };
 
+function initialize() {
+	var myLatlng = new google.maps.LatLng(41.042437, 29.009289);
+	var mapOptions = {
+		zoom: 16,
+		center: myLatlng
+	}
+	var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
 
-$(document).ready( function() {	
+	var marker = new google.maps.Marker({
+		position: myLatlng,
+		map: map,
+		title: 'php-ist PHP Conference Venue'
+	});
+}
+
+$(document).ready( function() {
+	google.maps.event.addDomListener(window, 'load', initialize);
+	google.maps.event.addDomListener(window, "resize", function() {
+		var center = map.getCenter();
+		google.maps.event.trigger(map, "resize");
+		map.setCenter(center); 
+	});
 	// Resize the section on load
 	setSectionHeight();
 
@@ -67,11 +87,11 @@ $(document).ready( function() {
 
 	// Apply styling to select box on registration section
 	$('#ticket')
-		.fancySelect()
-		.change( function() {
-			var total = $(this).val().split(' ')[0];
+	.fancySelect()
+	.change( function() {
+		var total = $(this).val().split(' ')[0];
 
-			var totalPrice = parseInt(total) * ticketPrice;
+		var totalPrice = parseInt(total) * ticketPrice;
 
 			//alert(total);
 			$('#totalPrice').text(totalPrice);
