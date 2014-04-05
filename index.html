@@ -1,441 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="php-ist">
-        <link rel="shortcut icon" href="/assets/img/favicon.ico">
-        <title>php-ist PHP Conference 2014</title>
-        <link href="https://fonts.googleapis.com/css?family=Andada" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
-        <!-- Bootstrap core CSS -->
-        <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
-        <link href="/assets/css/fancySelect.css" rel="stylesheet">
-        <!-- Custom styles for this template -->
-        <link href="/assets/css/style.css" rel="stylesheet" type="text/css">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="php-ist">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <title>php-ist PHP Conference 2014</title>
+    <link href="https://fonts.googleapis.com/css?family=Andada&subset=latin,latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&subset=latin,latin-ext" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/assets/css/fancySelect.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="/assets/css/style.css" rel="stylesheet" type="text/css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
         <script src="js/libs/html5shiv.js"></script>
         <script src="js/libs/respond.min.js"></script>
         <![endif]-->
         <script src="/assets/js/main.js" type="text/javascript"></script>
-        <script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
-		  ga('create', 'UA-49736003-1', 'phpist.org');
-		  ga('send', 'pageview');
-		</script>
-    </head>
-    <body style="">
-        <div id="mainnav">
-            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-                <div class="navbar-header visible-xs">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <script>
+            function initialize() {
+              var myLatlng = new google.maps.LatLng(41.042437, 29.009289);
+              var mapOptions = {
+                zoom: 16,
+                center: myLatlng
+            }
+            var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+
+            var marker = new google.maps.Marker({
+              position: myLatlng,
+              map: map,
+              title: 'Hello World!'
+          });
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+        google.maps.event.addDomListener(window, 'load', initialize);
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-49736003-1', 'phpist.org');
+        ga('send', 'pageview');
+    </script>
+</head>
+<body style="">
+    <div id="mainnav">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="navbar-header visible-xs">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">PHP Conference 2014</a>
-                </div>
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
-                    <ul class="nav navbar-nav active">
-                        <li data-menuanchor="home" class="active">
-                            <a href="#home">Home</a>
-                        </li>
-                        <li data-menuanchor="speakers" class="">
-                            <a href="#speakers">Speakers</a>
-                        </li>
-                        <li data-menuanchor="schedule" class="mid-li-left">
-                            <a href="#schedule">Schedule</a>
-                        </li>
-                        <li data-menuanchor="venue" class="mid-li-right">
-                            <a href="#venue">Venue</a>
-                        </li>
-                        <li data-menuanchor="sponsors">
-                            <a href="#sponsors">Sponsors</a>
-                        </li>
-                        <li data-menuanchor="transportation">
-                            <a href="#transportation">Transportation</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <!-- /mainnav -->
-        <div class="hidden-xs">
-            <h1 id="logo" >
-                <a href="#">
+                </button>
+                <a class="navbar-brand" href="#">PHP Conference 2014</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav active">
+                    <li data-menuanchor="home" class="active">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li data-menuanchor="speakers" class="">
+                        <a href="#speakers">Speakers</a>
+                    </li>
+                    <li data-menuanchor="schedule" class="mid-li-left">
+                        <a href="#schedule">Schedule</a>
+                    </li>
+                    <li data-menuanchor="venue" class="mid-li-right">
+                        <a href="#venue">Venue</a>
+                    </li>
+                    <li data-menuanchor="sponsors">
+                        <a href="#sponsors">Sponsors</a>
+                    </li>
+                    <li data-menuanchor="transportation">
+                        <a href="#transportation">Transportation</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- /mainnav -->
+    <div class="hidden-xs">
+        <h1 id="logo" >
+            <a href="#">
                 <span class="line1">PHP</span>
                 <span class="line2">Conference</span>
                 <span class="line3">2014</span>
-                </a>
-            </h1>
-        </div>
-        <div>
-            <section class="section" id="home">
-                <div class="inner" style="min-height: 789px;">
-                    <div class="content">
-                        <h1>php-ist PHP Conference</h1>
-                        <h2>At second php-ist event, we are talking the latest developments and cutting edge techologies in php world.</h2>
-                        <h2>3th May 2014 — Istanbul, Turkey</h2>
-                        <h3>
-                            <a href="turkish.html">
-                                Sayfayı Türkçe görüntülemek için lütfen tıklayın.
-                            </a>
-                        </h3>
+            </a>
+        </h1>
+    </div>
+    <div>
+        <section class="section" id="home">
+            <div class="inner" style="min-height: 789px;">
+                <div class="content">
+                    <h1>php-ist PHP Conference</h1>
+                    <h2>At second php-ist event, we are talking the latest developments and cutting edge techologies in php world.</h2>
+                    <h2>3th May 2014 — Istanbul, Turkey</h2>
+                    <h3>
+                        <a href="turkish.html">
+                            Sayfayı Türkçe görüntülemek için lütfen tıklayın.
+                        </a>
+                    </h3>
+                    <div>
+                        <a target="_blank" href="http://phpist-2014.eventbrite.com" class="btn btn-primary btn-lg">Get Your <span>Ticket</span></a>
+                    </div>
+                </div>
+                <!-- /content -->
+            </div>
+            <!-- /inner -->
+        </section>
+        <!-- /section -->
+        <section class="section" id="speakers">
+            <div class="inner" style="min-height: 789px;">
+                <div class="content">
+                    <h1>Speakers</h1>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-3 col-sm-4 col-xs-12">
+                            <div class="speaker" style="height: 219px;">
+                                <img src="/assets/img/speakers/osman_ungur.jpg" alt="Osman Üngür">
+                                <h2>Osman Üngür</h2>
+                                <div>Limango</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-sm-4 col-xs-12">
+                            <div class="speaker" style="height: 219px;">
+                                <img src="/assets/img/speakers/hugo_hamon.jpg" alt="Hugo Hamon">
+                                <h2>Hugo Hamon</h2>
+                                <div>SensioLabs</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-sm-4 col-xs-12">
+                            <div class="speaker" style="height: 219px;">
+                                <img src="/assets/img/speakers/lemi_orhan_ergin.jpg" alt="Lemi Orhan Ergin">
+                                <h2>Lemi Orhan Ergin</h2>
+                                <div>Sony</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-sm-4 col-xs-12">
+                            <div class="speaker" style="height: 219px;">
+                                <img src="/assets/img/speakers/ramazan_korkmaz.jpg" alt="Ramazan Korkmaz">
+                                <h2>Ramazan Korkmaz</h2>
+                                <div>Enuygun.com</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-sm-4 col-xs-12">
+                            <div class="speaker" style="height: 219px;">
+                                <img src="/assets/img/speakers/alvaro_videla.png" alt="Alvaro Videla">
+                                <h2>Alvaro Videla</h2>
+                                <div>RabbitMQ</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-sm-4 col-xs-12">
+                            <div class="speaker" style="height: 219px;">
+                                <img src="/assets/img/speakers/suat_imamoglu.jpg" alt="Suat İmamoğlu">
+                                <h2>Suat İmamoğlu</h2>
+                                <div>Taşıt.com</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /row -->
+                </div>
+                <!-- /content -->
+            </div>
+            <!-- /inner -->
+        </section>
+        <!-- /section -->
+        <div class="section alt" id="schedule">
+            <div class="inner" style="min-height: 789px;">
+                <div class="content">
+                    <h1>Schedule</h1>
+                    <div id="event-schedule" class="carousel slide">
                         <div>
-                            <a target="_blank" href="http://phpist-2014.eventbrite.com" class="btn btn-primary btn-lg">Get Your <span>Ticket</span></a>
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li class="active" data-target="#event-schedule" data-slide-to="0">Saturday</li>
+                            </ol>
                         </div>
-                    </div>
-                    <!-- /content -->
-                </div>
-                <!-- /inner -->
-            </section>
-            <!-- /section -->
-            <section class="section" id="speakers">
-                <div class="inner" style="min-height: 789px;">
-                    <div class="content">
-                        <h1>Speakers</h1>
-                        <div class="row">
-                            <div class="col-lg-4 col-md-3 col-sm-4 col-xs-6">
-                                <div class="speaker" style="height: 219px;">
-                                    <img src="/assets/img/speakers/osman_ungur.jpg" alt="Osman Üngür">
-                                    <h2>Osman Üngür</h2>
-                                    <div>Limango</div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-3 col-sm-4 col-xs-6">
-                                <div class="speaker" style="height: 219px;">
-                                    <img src="/assets/img/speakers/hugo_hamon.jpg" alt="Hugo Hamon">
-                                    <h2>Hugo Hamon</h2>
-                                    <div>SensioLabs</div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-3 col-sm-4 col-xs-6">
-                                <div class="speaker" style="height: 219px;">
-                                    <img src="/assets/img/speakers/lemi_orhan_ergin.jpg" alt="Lemi Orhan Ergin">
-                                    <h2>Lemi Orhan Ergin</h2>
-                                    <div>Sony</div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-3 col-sm-4 col-xs-6">
-                                <div class="speaker" style="height: 219px;">
-                                    <img src="/assets/img/speakers/ramazan_korkmaz.jpg" alt="Ramazan Korkmaz">
-                                    <h2>Ramazan Korkmaz</h2>
-                                    <div>Enuygun.com</div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-3 col-sm-4 col-xs-6">
-                                <div class="speaker" style="height: 219px;">
-                                    <img src="/assets/img/speakers/alvaro_videla.png" alt="Alvaro Videla">
-                                    <h2>Alvaro Videla</h2>
-                                    <div>RabbitMQ</div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-3 col-sm-4 col-xs-6">
-                                <div class="speaker" style="height: 219px;">
-                                    <img src="/assets/img/speakers/suat_imamoglu.jpg" alt="Suat İmamoğlu">
-                                    <h2>Suat İmamoğlu</h2>
-                                    <div>Taşıt.com</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /row -->					
-                    </div>
-                    <!-- /content -->
-                </div>
-                <!-- /inner -->
-            </section>
-            <!-- /section -->
-            <div class="section alt" id="schedule">
-                <div class="inner" style="min-height: 789px;">
-                    <div class="content">
-                        <h1>Schedule</h1>
-                        <div id="event-schedule" class="carousel slide">
-                            <div>
-                                <!-- Indicators -->
-                                <ol class="carousel-indicators">
-                                    <li class="active" data-target="#event-schedule" data-slide-to="0">Saturday</li>
-                                </ol>
-                            </div>
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <h2 class="schedule-day">3 May 2014</h2>
-                                    <div class="schedule">
-                                        <div class="tentative">
-                                            <div class="row">
-                                                <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-                                                    <img src="/assets/img/register.jpg">
-                                                </div>
-                                                <div class="title col-lg-10 col-md-10 col-sm-10 col-xs-9">
-                                                    <div class="time">08.45 AM</div>
-                                                    <h4>Registration</h4>
-                                                </div>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <h2 class="schedule-day">3 May 2014</h2>
+                                <div class="schedule">
+                                    <div class="tentative">
+                                        <div class="row">
+                                            <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
+                                                <img src="/assets/img/register.jpg">
+                                            </div>
+                                            <div class="title col-lg-10 col-md-10 col-sm-10 col-xs-9">
+                                                <div class="time">08.45 AM</div>
+                                                <h4>Registration</h4>
                                             </div>
                                         </div>
-                                        <!-- /tentative -->
-                                        <div class="tentative">
-                                            <div class="row">
-                                                <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-                                                    <img src="/assets/img/opening.jpg">
-                                                </div>
-                                                <div class="title col-lg-10 col-md-10 col-sm-10 col-xs-9">
-                                                    <div class="time">09.00 AM - 09.30 AM</div>
-                                                    <h4>Opening Ceremony</h4>
-                                                </div>
+                                    </div>
+                                    <!-- /tentative -->
+                                    <div class="tentative">
+                                        <div class="row">
+                                            <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
+                                                <img src="/assets/img/opening.jpg">
+                                            </div>
+                                            <div class="title col-lg-10 col-md-10 col-sm-10 col-xs-9">
+                                                <div class="time">09.00 AM - 09.30 AM</div>
+                                                <h4>Opening Ceremony</h4>
                                             </div>
                                         </div>
-                                        <!-- /tentative -->
-                                        <div class="tentative">
-                                            <div class="row">
-                                                <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-                                                    <img src="/assets/img/speakers/osman_ungur.jpg">
+                                    </div>
+                                    <!-- /tentative -->
+                                    <div class="tentative">
+                                        <div class="row">
+                                            <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
+                                                <img src="/assets/img/speakers/osman_ungur.jpg">
+                                            </div>
+                                            <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
+                                                <div class="social">
+                                                    <a href="https://github.com/o" target="_blank"><i class="fa fa-github-square"></i></a>
+                                                    <a href="https://twitter.com/osmanung" target="_blank"><i class="fa fa-twitter-square"></i></a>
+                                                    <a href="http://www.linkedin.com/in/osmanungur" target="_blank"><i class="fa fa-linkedin-square"></i></a>
                                                 </div>
-                                                <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
-                                                    <div class="social">
-                                                        <a href="https://github.com/o" target="_blank"><i class="fa fa-github-square"></i></a>
-                                                        <a href="https://twitter.com/osmanung" target="_blank"><i class="fa fa-twitter-square"></i></a>
-                                                        <a href="http://www.linkedin.com/in/osmanungur" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-                                                    </div>
-                                                    <div class="time">09.45 AM - 10.30 AM</div>
-                                                    <h4>Osman Üngür <span>Limango</span></h4>
-                                                    <p>Topic: <span>Redis in Practice</span></p>
-                                                    <!--<p class="summary">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>-->
-                                                </div>
+                                                <div class="time">09.45 AM - 10.30 AM</div>
+                                                <h4>Osman Üngür <span>Limango</span></h4>
+                                                <p>Topic: <span>Redis in Practice</span></p>
+                                                <!--<p class="summary">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>-->
                                             </div>
                                         </div>
-                                        <!-- /tentative -->
-                                        <div class="tentative">
-                                            <div class="row">
-                                                <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-                                                    <img src="/assets/img/speakers/hugo_hamon.jpg">
+                                    </div>
+                                    <!-- /tentative -->
+                                    <div class="tentative">
+                                        <div class="row">
+                                            <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
+                                                <img src="/assets/img/speakers/hugo_hamon.jpg">
+                                            </div>
+                                            <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
+                                                <div class="social">
+                                                    <a href="https://github.com/hhamon" target="_blank"><i class="fa fa-github-square"></i></a>
+                                                    <a href="https://twitter.com/hhamon" target="_blank"><i class="fa fa-twitter-square"></i></a>
+                                                    <a href="http://fr.linkedin.com/in/hugohamon" target="_blank"><i class="fa fa-linkedin-square"></i></a>
                                                 </div>
-                                                <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
-                                                    <div class="social">
-                                                        <a href="https://github.com/hhamon" target="_blank"><i class="fa fa-github-square"></i></a>
-                                                        <a href="https://twitter.com/hhamon" target="_blank"><i class="fa fa-twitter-square"></i></a>
-                                                        <a href="http://fr.linkedin.com/in/hugohamon" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-                                                    </div>
-                                                    <div class="time">10.45 AM - 11.30 AM</div>
-                                                    <h4>Hugo Hamon <span>SensioLabs</span></h4>
-                                                    <p>Topic: <span>Advanced Symfony2 Presentation and Features Upcoming in version 2.5</span></p>
-                                                    <!--<p class="summary">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>-->
-                                                </div>
+                                                <div class="time">10.45 AM - 11.30 AM</div>
+                                                <h4>Hugo Hamon <span>SensioLabs</span></h4>
+                                                <p>Topic: <span>Advanced Symfony2 Presentation and Features Upcoming in version 2.5</span></p>
+                                                <!--<p class="summary">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>-->
                                             </div>
                                         </div>
-                                        <!-- /tentative -->
-                                        <div class="tentative">
-                                            <div class="row">
-                                                <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-                                                    <img src="/assets/img/speakers/wba.png">
-                                                </div>
-                                                <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
+                                    </div>
+                                    <!-- /tentative -->
+                                    <div class="tentative">
+                                        <div class="row">
+                                            <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
+                                                <img src="/assets/img/speakers/wba.png">
+                                            </div>
+                                            <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
                                                     <!--<div class="social">
                                                         <a href="#"><i class="fa fa-facebook-square"></i></a>
                                                         <a href="#"><i class="fa fa-twitter-square"></i></a>
                                                         <a href="#"><i class="fa fa-google-plus-square"></i></a>
-                                                        </div>-->
+                                                    </div>-->
                                                     <div class="time">11.45 AM - 12.15 PM</div>
                                                     <h4>
                                                     Will be announced soon. <!--<span>Designer Wall Inc.</span></h4>
                                                         <p>Topic: <span>Designing for Human</span></p>
                                                         <p class="summary">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>-->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- /tentative -->
-                                        <div class="tentative">
-                                            <div class="row">
-                                                <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-                                                    <img src="/assets/img/lunch.jpg">
-                                                </div>
-                                                <div class="title col-lg-10 col-md-10 col-sm-10 col-xs-9">
-                                                    <div class="time">12.15 PM - 1.30 PM</div>
-                                                    <h4>Lunch Break</h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- /tentative -->
-                                        <div class="tentative">
-                                            <div class="row">
-                                                <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-                                                    <img src="/assets/img/speakers/lemi_orhan_ergin.jpg">
-                                                </div>
-                                                <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
-                                                    <div class="social">
-                                                        <a href="https://github.com/lemiorhan" target="_blank"><i class="fa fa-github-square"></i></a>
-                                                        <a href="https://twitter.com/lemiorhan" target="_blank"><i class="fa fa-twitter-square"></i></a>
-                                                        <a href="http://tr.linkedin.com/in/lemiorhan" target="_blank"><i class="fa fa-linkedin-square"></i></a>
                                                     </div>
-                                                    <div class="time">1:30 PM - 2:15 PM</div>
-                                                    <h4>Lemi Orhan Ergin <span>Sony</span></h4>
-                                                    <p>Topic: <span>Code Review Processes</span></p>
-                                                    <!--<p class="summary">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>-->
                                                 </div>
                                             </div>
-                                        </div>
-                                        <!-- /tentative -->
-                                        <div class="tentative">
-                                            <div class="row">
-                                                <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-                                                    <img src="/assets/img/speakers/ramazan_korkmaz.jpg">
-                                                </div>
-                                                <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
-                                                    <div class="social">
-                                                        <a href="https://github.com/rakodev" target="_blank"><i class="fa fa-github-square"></i></a>
-                                                        <a href="https://twitter.com/rakodev" target="_blank"><i class="fa fa-twitter-square"></i></a>
-                                                        <a href="http://www.linkedin.com/in/rkorkmaz" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                                            <!-- /tentative -->
+                                            <div class="tentative">
+                                                <div class="row">
+                                                    <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
+                                                        <img src="/assets/img/lunch.jpg">
                                                     </div>
-                                                    <div class="time">2.30 PM - 3.15 PM</div>
-                                                    <h4>Ramazan Korkmaz <span>EnUygun.com</span></h4>
-                                                    <p>Topic: <span>Control your "deployment"s with Capistrano</span></p>
-                                                    <!--<p class="summary">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>-->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- /tentative -->
-                                        <div class="tentative">
-                                            <div class="row">
-                                                <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-                                                    <img src="/assets/img/speakers/alvaro_videla.png">
-                                                </div>
-                                                <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
-                                                    <div class="social">
-                                                        <a href="https://github.com/videlalvaro" target="_blank"><i class="fa fa-github-square"></i></a>
-                                                        <a href="https://twitter.com/old_sound" target="_blank"><i class="fa fa-twitter-square"></i></a>
-                                                        <a href="http://www.linkedin.com/in/alvarovidela" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                                                    <div class="title col-lg-10 col-md-10 col-sm-10 col-xs-9">
+                                                        <div class="time">12.15 PM - 1.30 PM</div>
+                                                        <h4>Lunch Break</h4>
                                                     </div>
-                                                    <div class="time">3.30 PM - 4.15 PM</div>
-                                                    <h4>Alvaro Videla <span>RabbitMQ</span></h4>
-                                                    <p>Topic: <span>Building a Distributed Data Ingestion System with RabbitMQ</span></p>
-                                                    <!--<p class="summary">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>-->
                                                 </div>
                                             </div>
-                                        </div>
-                                        <!-- /tentative -->
-                                        <div class="tentative">
-                                            <div class="row">
-                                                <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
-                                                    <img src="/assets/img/speakers/suat_imamoglu.jpg">
-                                                </div>
-                                                <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
-                                                    <div class="social">
-                                                        <a href="https://github.com/simam" target="_blank"><i class="fa fa-github-square"></i></a>
-                                                        <a href="https://twitter.com/suatimam" target="_blank"><i class="fa fa-twitter-square"></i></a>
-                                                        <a href="http://tr.linkedin.com/in/suatimamoglu" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                                            <!-- /tentative -->
+                                            <div class="tentative">
+                                                <div class="row">
+                                                    <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
+                                                        <img src="/assets/img/speakers/lemi_orhan_ergin.jpg">
                                                     </div>
-                                                    <div class="time">4.30 PM - 5.15 PM</div>
-                                                    <h4>Suat İmamoğlu <span>Source Code Inc.</span></h4>
-                                                    <p>Topic: <span>Server Setup and Management with Ansible and Vagrant</span></p>
-                                                    <!--<p class="summary">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>-->
+                                                    <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
+                                                        <div class="social">
+                                                            <a href="https://github.com/lemiorhan" target="_blank"><i class="fa fa-github-square"></i></a>
+                                                            <a href="https://twitter.com/lemiorhan" target="_blank"><i class="fa fa-twitter-square"></i></a>
+                                                            <a href="http://tr.linkedin.com/in/lemiorhan" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                                                        </div>
+                                                        <div class="time">1:30 PM - 2:15 PM</div>
+                                                        <h4>Lemi Orhan Ergin <span>Sony</span></h4>
+                                                        <p>Topic: <span>Code Review Processes</span></p>
+                                                        <!--<p class="summary">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>-->
+                                                    </div>
                                                 </div>
                                             </div>
+                                            <!-- /tentative -->
+                                            <div class="tentative">
+                                                <div class="row">
+                                                    <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
+                                                        <img src="/assets/img/speakers/ramazan_korkmaz.jpg">
+                                                    </div>
+                                                    <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
+                                                        <div class="social">
+                                                            <a href="https://github.com/rakodev" target="_blank"><i class="fa fa-github-square"></i></a>
+                                                            <a href="https://twitter.com/rakodev" target="_blank"><i class="fa fa-twitter-square"></i></a>
+                                                            <a href="http://www.linkedin.com/in/rkorkmaz" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                                                        </div>
+                                                        <div class="time">2.30 PM - 3.15 PM</div>
+                                                        <h4>Ramazan Korkmaz <span>EnUygun.com</span></h4>
+                                                        <p>Topic: <span>Control your "deployment"s with Capistrano</span></p>
+                                                        <!--<p class="summary">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /tentative -->
+                                            <div class="tentative">
+                                                <div class="row">
+                                                    <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
+                                                        <img src="/assets/img/speakers/alvaro_videla.png">
+                                                    </div>
+                                                    <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
+                                                        <div class="social">
+                                                            <a href="https://github.com/videlalvaro" target="_blank"><i class="fa fa-github-square"></i></a>
+                                                            <a href="https://twitter.com/old_sound" target="_blank"><i class="fa fa-twitter-square"></i></a>
+                                                            <a href="http://www.linkedin.com/in/alvarovidela" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                                                        </div>
+                                                        <div class="time">3.30 PM - 4.15 PM</div>
+                                                        <h4>Alvaro Videla <span>RabbitMQ</span></h4>
+                                                        <p>Topic: <span>Building a Distributed Data Ingestion System with RabbitMQ</span></p>
+                                                        <!--<p class="summary">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /tentative -->
+                                            <div class="tentative">
+                                                <div class="row">
+                                                    <div class="image col-lg-2 col-md-2 col-sm-2 col-xs-3">
+                                                        <img src="/assets/img/speakers/suat_imamoglu.jpg">
+                                                    </div>
+                                                    <div class="title track col-lg-10 col-md-10 col-sm-10 col-xs-9">
+                                                        <div class="social">
+                                                            <a href="https://github.com/simam" target="_blank"><i class="fa fa-github-square"></i></a>
+                                                            <a href="https://twitter.com/suatimam" target="_blank"><i class="fa fa-twitter-square"></i></a>
+                                                            <a href="http://tr.linkedin.com/in/suatimamoglu" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                                                        </div>
+                                                        <div class="time">4.30 PM - 5.15 PM</div>
+                                                        <h4>Suat İmamoğlu <span>Source Code Inc.</span></h4>
+                                                        <p>Topic: <span>Server Setup and Management with Ansible and Vagrant</span></p>
+                                                        <!--<p class="summary">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /tentative -->
                                         </div>
-                                        <!-- /tentative -->
+                                        <!-- /schedule -->
                                     </div>
-                                    <!-- /schedule -->		
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /content -->
-                </div>
-                <!-- /inner -->
-                <!-- /section -->
-                <section class="section" id="venue">
-                    <div class="inner" style="min-height: 789px;">
-                        <div class="content">
-                            <h1>Venue</h1>
-                            <h2>Bahcesehir University Besiktas Campus</h2>
-                            <h3>Istanbul, Turkey</h3>
-                        </div>
-                        <!-- /content -->
-                    </div>
-                    <!-- /inner -->
-                </section>
-                <!-- /section -->
-                <div class="section alt" id="sponsors">
-                    <div class="inner" style="min-height: 789px;">
-                        <div class="content">
-                            <h1>Organization By</h1>
-                            <div>							
-                                <a href="#">
-                                <img src="/assets/img/sponsors/phpist.png">
-                                </a>
-                                <a target="_blank" href="http://www.ubit.com.tr">
-                                <img src="/assets/img/sponsors/ubit.png">
-                                </a>
-                            </div>
-                            <hr>
-                            <h1>Sponsors</h1>
-                            <h2>Platinum Sponsors</h2>
-                            <div>
-                                <a target="_blank" href="http://www.enuygun.com/">
-                                <img src="/assets/img/sponsors/enuygun.png" width="380">
-                                </a>
-                                <a target="_blank" href="http://www.tasit.com/">
-                                <img src="/assets/img/sponsors/tasit.png" width="380">
-                                </a>
-                            </div>
-                            <hr>
-                            <h2>Stand Sponsors</h2>
-                            <div>
-                                <a target="_blank" href="http://www.webbox.io">
-                                <img src="/assets/img/sponsors/webbox.io.png" width="200">
-                                </a>
-                                <a target="_blank" href="http://www.elemanonline.net">
-                                <img src="/assets/img/sponsors/elemannet-logo.png" width="250">
-                                </a>
                             </div>
                         </div>
                         <!-- /content -->
                     </div>
                     <!-- /inner -->
                     <!-- /section -->
-                    <section class="section" id="transportation">
+                    <section class="section" id="venue">
                         <div class="inner" style="min-height: 789px;">
                             <div class="content">
-                                <h1>Transportation</h1>
-                                Transportation Info
+                                <h1>Venue</h1>
+                                <h2>Bahcesehir University Besiktas Campus</h2>
+                                <h3>Istanbul, Turkey</h3>
+                                <div id="map_canvas"></div>
                             </div>
                             <!-- /content -->
                         </div>
                         <!-- /inner -->
                     </section>
                     <!-- /section -->
-                </div>
-                <footer>
-                    <div class="container">
-                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 socials">
-                            <a href="https://www.facebook.com/groups/istanbul.developers" target="_blank"><i class="fa fa-facebook-square"></i></a>
-                            <a href="https://twitter.com/phpistorg" target="_blank"><i class="fa fa-twitter-square"></i></a>
-                            <a href="mailto:bilgi@phpist.org" target="_blank"><i class="fa fa-envelope"></i></a>
+                    <div class="section alt" id="sponsors">
+                        <div class="inner" style="min-height: 789px;">
+                            <div class="content">
+                                <h1>Organization By</h1>
+                                <div class="organization-by">
+                                    <a href="#">
+                                        <img src="/assets/img/sponsors/phpist.png" class="img-responsive">
+                                    </a>
+                                    <a target="_blank" href="http://www.ubit.com.tr">
+                                        <img src="/assets/img/sponsors/ubit.png" class="img-responsive">
+                                    </a>
+                                </div>
+                                <hr>
+                                <h1>Sponsors</h1>
+                                <h2>Platinum Sponsors</h2>
+                                <div class="platinum-sponsors">
+                                    <a target="_blank" href="http://www.enuygun.com/">
+                                        <img src="/assets/img/sponsors/enuygun.png" class="img-responsive">
+                                    </a>
+                                    <a target="_blank" href="http://www.tasit.com/">
+                                        <img src="/assets/img/sponsors/tasit.png" class="img-responsive">
+                                    </a>
+                                </div>
+                                <hr>
+                                <h2>Stand Sponsors</h2>
+                                <div class="stand-sponsors">
+                                    <a target="_blank" href="http://www.webbox.io">
+                                        <img src="/assets/img/sponsors/webbox.io.png" class="img-responsive">
+                                    </a>
+                                    <a target="_blank" href="http://www.elemanonline.net">
+                                        <img src="/assets/img/sponsors/elemannet-logo.png" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- /content -->
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">              
+                        <!-- /inner -->
+                        <!-- /section -->
+                        <section class="section" id="transportation">
+                            <div class="inner" style="min-height: 1000px;">
+                                <div class="content">
+                                    <h1>Transportation</h1>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        
+
+                                        <h2 class="white">From Kadikoy</h2>
+                                        <blockquote class="white transportationInfo">Kadikoy - Besiktas ferry departing from the ferry port to the beach will bring you Besiktas. When you arrive to Besiktas, venue will be in the direction of ~ 2 minutes walk from Ortakoy.</blockquote>
+                                        
+
+                                        <h2 class="white">From Mecidiyeköy</h2>
+                                        <blockquote class="white transportationInfo">You can arrive to the venue by using the bus with number 30M.</blockquote>
+                                        
+
+                                        <h2 class="white">From Esenler/Otogar</h2>
+                                        <blockquote class="white transportationInfo">
+                                            1. First you need to use Havalimanı-Aksaray metro line. You can transfer to T1 Kabatas-Bagcilar tram at Yusufpasa station by five minutes of walking or Aksaray station by ten minutes of walking. After you use and arrive to Kabatas any bus you use will get you to Besiktas. Once you arrive Besiktas you can find the event place by two minutes of walking to Ortakoy direction.
+                                            <br/><br/>
+                                            2. You can transfer to Avcılar-Zincirlikuyu metrobus line at Zeytinburnu station after once you use Havalimani-Aksaray metro. When you get off the metrobus at Zincirlikuyu every bus goes to Besiktas and Kabatas will get you to Besiktas. Once you arrived to Besiktas you can arrive to event by two minutes of walking.
+                                        </blockquote>
+
+                                        <h2 class="white">From Ataturk Airport</h2>
+                                        <blockquote class="white transportationInfo">Participants coming from Ataturk Airport can use the same way with the participants coming from Esenler/Otogar.</blockquote>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        
+
+                                        <h2 class="white">From Pendik</h2>
+                                        <blockquote class="white transportationInfo">You can transfer to Sogutlucesme-Zincirlikuyu metrobus line by using Pendik-Haydarpasa train.
+                                            After you arrive Zincirlikuyu every bus goes to Besiktas and Kabatas will get you to Besiktas. Once you arrived to Besiktas you can arrive to event by two minutes of walking.</blockquote>
+                                            
+
+                                            <h2 class="white">From Kartal</h2>
+                                            <blockquote class="white transportationInfo">1. You can transfer to Sogutlucesme-Zincirlikuyu metrobus line by using Pendik-Haydarpasa train.
+                                                After you arrive Zincirlikuyu every bus goes to Besiktas and Kabatas will get you to Besiktas. Once you arrived to Besiktas you can arrive to event by two minutes of walking.<br/><br/>2. You can get Kadikoy - Besiktas ferry taking Kadikoy - Kartal metro line. After crossing to Besiktas coast(shore) taking uskudar besiktas ferry, you can arrive  approximately in two minutes walking toward Ortakoy.</blockquote>
+                                                
+
+                                                <h2 class="white">From Yenibosna</h2>
+                                                <blockquote class="white transportationInfo">
+                                                    After debussing metrobus in Zincirlikuyu you can get Besiktas square with any bus headed Besiktas and Kabatas. Than after nearly 2 minutes of walking toward Ortakoy you can arrive in.
+                                                </blockquote>
+
+                                                <h2 class="white">From Fatih / Edirnekapı</h2>
+                                                <blockquote class="white transportationInfo"> You can take bus with line number 28 to get Besiktas coast(shore).Than after nearly 2 minutes of walking toward Ortakoy u can arrive in.</blockquote>
+
+                                                <h2 class="white">From Üsküdar</h2>
+                                                <blockquote class="white transportationInfo">After crossing to Besiktas coast(shore) taking Uskudar-Besiktas ferry, you can arrive  approximately in two minutes walking toward Ortakoy.</blockquote>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /content -->
+                                </div>
+                                <!-- /inner -->
+                            </section>
+                            <!-- /section -->
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 copyright">
-                            php-ist PHP Conference
-                        </div>
-                    </div>
-                </footer>
+                        <footer>
+                            <div class="container">
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 socials">
+                                    <a href="https://www.facebook.com/groups/istanbul.developers" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                                    <a href="https://twitter.com/phpistorg" target="_blank"><i class="fa fa-twitter-square"></i></a>
+                                    <a href="mailto:bilgi@phpist.org" target="_blank"><i class="fa fa-envelope"></i></a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 copyright">
+                                    php-ist PHP Conference
+                                </div>
+                            </div>
+                        </footer>
                 <!-- Bootstrap core JavaScript
-                    ================================================== -->
+                ================================================== -->
                 <!-- Placed at the end of the document so the pages load faster -->
                 <script src="/assets/js/jquery.js"></script>
                 <script src="/assets/js/bootstrap.min.js"></script>
                 <script src="/assets/js/fancySelect.js"></script>
                 <script src="/assets/js/jquery.smooth-scroll.min.js"></script>
                 <script src="/assets/js/jquery.equalheights.min.js"></script>
-                <script src="/assets/js/script.js"></script>                
+                <script src="/assets/js/script.js"></script>
             </div>
         </div>
     </body>
-</html>
+    </html>

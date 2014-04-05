@@ -529,7 +529,7 @@ body {
 }
 .section#speakers .speaker {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   border-radius: 100%;
   -webkit-border-radius: 100%;
 }
@@ -631,10 +631,19 @@ body {
 }
 .section#sponsors a {
   display: inline-block;
+  vertical-align: top;
   margin-bottom: 20px;
   min-height: 60px;
   padding: 0 25px;
+  width: 100%;
+  margin-top: 30px;
 }
+
+.section#sponsors a img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .section#transportation {
   background: url('/assets/img/bg2.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -1113,4 +1122,28 @@ div.fancy-select select:focus + div.trigger {
   footer .copyright {
     text-align: right;
   }
+}
+
+.organization-by a {
+  max-width: 280px;
+}
+
+.platinum-sponsors a {
+  max-width: 400px;
+}
+
+.stand-sponsors a {
+  max-width: 300px;
+}
+#map_canvas {
+  margin-top: 40px;
+  width: 80%;
+  height: 55vh;
+  left: 10%;
+}
+.white{
+  color:#FAF4F4 !important;
+}
+.transportationInfo{
+  font-size: 14px !important;
 }
