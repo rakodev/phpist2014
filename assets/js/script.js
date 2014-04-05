@@ -11,7 +11,7 @@ var setSectionHeight = function() {
 
 
 $(document).ready( function() {
-
+	$('.typewrite').typeTo("<? php-ist PHP Conference ?>");
 	// Resize the section on load
 	setSectionHeight();
 

@@ -21,23 +21,21 @@
         <script src="js/libs/html5shiv.js"></script>
         <script src="js/libs/respond.min.js"></script>
         <![endif]-->
-        <script src="/assets/js/main.js" type="text/javascript"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script>
+        function initialize() {
+          var myLatlng = new google.maps.LatLng(41.042437, 29.009289);
+          var mapOptions = {
+            zoom: 16,
+            center: myLatlng
+        }
+        var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
 
-        <script>
-            function initialize() {
-              var myLatlng = new google.maps.LatLng(41.042437, 29.009289);
-              var mapOptions = {
-                zoom: 16,
-                center: myLatlng
-            }
-            var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
-
-            var marker = new google.maps.Marker({
-              position: myLatlng,
-              map: map,
-              title: 'Hello World!'
-          });
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'Hello World!'
+      });
         }
 
         google.maps.event.addDomListener(window, 'load', initialize);
@@ -101,9 +99,20 @@
         <section class="section" id="home">
             <div class="inner" style="min-height: 789px;">
                 <div class="content">
-                    <h1>php-ist PHP Conference</h1>
+                    <h1 class="typewrite" data-text=""></h1>
                     <h2>At second php-ist event, we are talking the latest developments and cutting edge techologies in php world.</h2>
-                    <h2>3th May 2014 — Istanbul, Turkey</h2>
+                    <h2>3th May 2014 — Istanbul, Turkey</h2>                                        
+                    <h1>
+                        <a href="https://www.facebook.com/groups/istanbul.developers" target="_blank">
+                            <i class="fa fa-facebook-square"></i>                        
+                        </a>
+                        <a href="https://twitter.com/phpistorg" target="_blank">
+                            <i class="fa fa-twitter-square"></i>                        
+                        </a>
+                        <a href="https://github.com/phpistorg" target="_blank">
+                            <i class="fa fa-github-square"></i>                        
+                        </a>
+                    </h1>
                     <h3>
                         <a href="turkish.html">
                             Sayfayı Türkçe görüntülemek için lütfen tıklayın.
@@ -503,11 +512,13 @@
                 <!-- Bootstrap core JavaScript
                 ================================================== -->
                 <!-- Placed at the end of the document so the pages load faster -->
+
                 <script src="/assets/js/jquery.js"></script>
                 <script src="/assets/js/bootstrap.min.js"></script>
                 <script src="/assets/js/fancySelect.js"></script>
                 <script src="/assets/js/jquery.smooth-scroll.min.js"></script>
                 <script src="/assets/js/jquery.equalheights.min.js"></script>
+                <script src="/assets/js/jquery.typer.js"></script>
                 <script src="/assets/js/script.js"></script>
             </div>
         </div>
