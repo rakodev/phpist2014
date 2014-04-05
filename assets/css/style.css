@@ -1138,7 +1138,7 @@ div.fancy-select select:focus + div.trigger {
 #map_canvas {
   margin-top: 40px;
   width: 80%;
-  height: 500px;
+  height: 450px;
   left: 10%;
 }
 .white{
