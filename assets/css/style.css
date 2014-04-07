@@ -1135,6 +1135,9 @@ div.fancy-select select:focus + div.trigger {
 .stand-sponsors a {
   max-width: 300px;
 }
+.other-sponsors a {
+  max-width: 160px;
+}
 #map_canvas {
   margin-top: 40px;
   width: 80%;
