@@ -1131,7 +1131,9 @@ div.fancy-select select:focus + div.trigger {
 .platinum-sponsors a {
   max-width: 400px;
 }
-
+.silver-sponsors a {
+  max-width: 350px;
+}
 .stand-sponsors a {
   max-width: 300px;
 }
