@@ -1,421 +1,609 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>php-ist: İstanbul PHP Konferansı</title>
-        <meta name="keywords" content="php konferans" >
-        <meta name="description" content="php istanbul konferansı" >        
-
-        <!--[if lt IE 9]>
-            <script type="text/javascript" src="js/external/html5shiv.js"></script>
-        <![endif]-->
-        <link rel="stylesheet" href="css/reset.css" type="text/css" />
-        <link rel="stylesheet" href="css/style.css" type="text/css" />
-        <link rel="stylesheet" href="css/header.css" type="text/css" />
-        <link rel="stylesheet" href="css/top.css" type="text/css" />
-        <link rel="stylesheet" href="css/content.css" type="text/css" />
-        <link rel="stylesheet" href="css/button.css" type="text/css" />
-        <link rel="stylesheet" href="css/footer.css" type="text/css" />
-        <link rel="stylesheet" href="css/program.css" type="text/css" />
-        <link rel="stylesheet" href="css/speakers.css" type="text/css" />
-        <link rel="stylesheet" href="css/sponsors.css" type="text/css" />
-        <link rel="stylesheet" href="css/devpod.css" type="text/css" />
-        <link rel="stylesheet" href="css/speaker_detail.css" type="text/css" />
-        <link rel="stylesheet" href="css/responsive.css" type="text/css" />
-    <!--</head>-->
-    <body data-modules="aboutUs">
-        <div id="contentAboveFooter">
-            <div id="header">
-                <header class="toCenter">
-                    <a href="/#!/" id="logo" class="sprite ir" title="PHP-IST">Logo</a> 
-                    <nav>
-                        <a href="/#!/" class="sprite home ir">Ana Sayfa</a>
-                        <a href="/#!/sponsors" class="sponsors">Sponsorlar</a>
-                        <a href="/#!/program" class="program">Program</a>
-                        <a href="/#!/speakers" class="speakers">Konuşmacılar</a>
-                        <a href="/#!/venue" class="venue">Ulaşım</a>
-                    </nav>
-                </header>
-            </div> <!-- #header -->
-
-        <div id="top">
-            <div class="topLine sprite"></div>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>
+         php-ist: İstanbul PHP Konferansı
+      </title>
+      <meta name="keywords" content="php konferans" >
+      <meta name="description" content="php istanbul konferansı" >
+      <!--[if lt IE 9]>
+      <script type="text/javascript" src="js/external/html5shiv.js"></script>
+      <![endif]-->
+      <link rel="stylesheet" href="css/reset.css" type="text/css" />
+      <link rel="stylesheet" href="css/style.css" type="text/css" />
+      <link rel="stylesheet" href="css/header.css" type="text/css" />
+      <link rel="stylesheet" href="css/top.css" type="text/css" />
+      <link rel="stylesheet" href="css/content.css" type="text/css" />
+      <link rel="stylesheet" href="css/button.css" type="text/css" />
+      <link rel="stylesheet" href="css/footer.css" type="text/css" />
+      <link rel="stylesheet" href="css/program.css" type="text/css" />
+      <link rel="stylesheet" href="css/speakers.css" type="text/css" />
+      <link rel="stylesheet" href="css/sponsors.css" type="text/css" />
+      <link rel="stylesheet" href="css/devpod.css" type="text/css" />
+      <link rel="stylesheet" href="css/speaker_detail.css" type="text/css" />
+      <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+      <link rel="stylesheet" href="css/font-awesome.css" type="text/css" />
+      <!--
+         </head>
+         -->
+   <body data-modules="aboutUs">
+      <div id="contentAboveFooter">
+         <div id="header">
+            <header class="toCenter">
+               <a href="/#!/" id="logo" class="sprite ir" title="PHP-IST">
+               Logo
+               </a>
+               <nav>
+                  <a href="/#!/" class="sprite home ir">
+                  Ana Sayfa
+                  </a>
+                  <a href="/#!/sponsors" class="sponsors">
+                  Sponsorlar
+                  </a>
+                  <a href="/#!/program" class="program">
+                  Program
+                  </a>
+                  <a href="/#!/speakers" class="speakers">
+                  Konuşmacılar
+                  </a>
+                  <a href="/#!/venue" class="venue">
+                  Ulaşım
+                  </a>
+               </nav>
+            </header>
+         </div>
+         <!-- #header -->
+         <div id="top">
+            <div class="topLine sprite">
+            </div>
             <div class="slide sprite">
-                <div class="text toCenter">
-                    <div id="info">
-                        <h1>PHP KONFERANSI</h1>
-                        <h3>3 MAYIS - BAHÇEŞEHİR ÜNİVERSİTESİ</h3>
-                        <p>İkinci php-ist etkinliğinde php dünyasındaki son gelişmeleri, en yeni teknolojileri konuşuyoruz. Test ve kalite araçlarından frameworklere kadar enine ve boyuna 'PHP' yi tartışmaya seni de bekliyoruz</p>
-                        <p>
+               <div class="text toCenter">
+                  <div id="info">
+                     <h1>
+                        PHP KONFERANSI
+                     </h1>
+                     <h3>
+                        3 MAYIS - BAHÇEŞEHİR ÜNİVERSİTESİ
+                     </h3>
+                     <p>
+                        İkinci php-ist etkinliğinde php dünyasındaki son gelişmeleri, en yeni teknolojileri konuşuyoruz. Test ve kalite araçlarından frameworklere kadar enine ve boyuna 'PHP' yi tartışmaya seni de bekliyoruz.
+                     </p>
+                     <p>
                         <br/>
                         <span class="contactMail">
-                            <script type="text/javascript"><!--
-                                                    var dnubwxk = ['h','r','a','s','o','p','l','i','s','o','a','i','m','<','=','>','b','a','i','@','<','r','"',' ','=',':','t','i','"','g','p','i','a','i','"',' ','l','h','l','"','e','g','f','b','c','i','h','>','s','.','p','.','r','g','i','o','p','a','s','@','t','m','/','l','g','l','t','e'];var raxjant = [3,30,1,37,14,22,50,52,58,29,36,57,9,0,39,47,48,66,49,53,64,62,32,33,7,15,59,11,46,63,54,25,10,17,40,2,18,55,35,8,5,31,6,16,34,20,23,67,26,28,56,60,4,51,44,61,24,43,38,21,13,42,65,12,19,45,27,41];var facibmn= new Array();for(var i=0;i<raxjant.length;i++){facibmn[raxjant[i]] = dnubwxk[i]; }for(var i=0;i<facibmn.length;i++){document.write(facibmn[i]);}
-                                                    // --></script>
+                           <script type="text/javascript">
+                              <!--
+                                 var dnubwxk = ['h','r','a','s','o','p','l','i','s','o','a','i','m','<','=','>','b','a','i','@','<','r','"',' ','=',':','t','i','"','g','p','i','a','i','"',' ','l','h','l','"','e','g','f','b','c','i','h','>','s','.','p','.','r','g','i','o','p','a','s','@','t','m','/','l','g','l','t','e'];
+                                 var raxjant = [3,30,1,37,14,22,50,52,58,29,36,57,9,0,39,47,48,66,49,53,64,62,32,33,7,15,59,11,46,63,54,25,10,17,40,2,18,55,35,8,5,31,6,16,34,20,23,67,26,28,56,60,4,51,44,61,24,43,38,21,13,42,65,12,19,45,27,41];
+                                 var facibmn= new Array();for(var i=0;i<raxjant.length;i++){
+                                   facibmn[raxjant[i]] = dnubwxk[i];
+                                 }for(var i=0;i<facibmn.length;i++){
+                                   document.write(facibmn[i]);
+                                 }
+                                     // -->
+                           </script>
                         </span>
                         <br/>
-                            <span class="ircLink">
-                                <a href="irc://irc.freenode.net/phpist">irc://irc.freenode.net/phpist</a>
-                            </span>
-                        </p>
-                        <a href="http://phpist.eventbrite.com/" target="_blank" class="redButton" id="registerRedButton">Ücretsiz Kayıt Ol</a>
-                    </div>
-                <i class="sprite" id="elephant"></i>
+                        <span class="ircLink">
+                        <a href="irc://irc.freenode.net/phpist">
+                        irc://irc.freenode.net/phpist
+                        </a>
+                        </span>
+                     </p>
+                     <a href="http://phpist.eventbrite.com/" target="_blank" class="btn btn-success">
+                     Ücretsiz Kayıt Ol
+                     </a>
+                  </div>
+                  <i class="sprite" id="elephant">
+                  </i>
+               </div>
             </div>
-        </div> <!-- .slide -->
-        <div class="followUs">
-            Gelişmeler için bizi takip edin            <a href="https://twitter.com/phpistorg" class="ir sprite twitter">Twitter</a> 
-            <a href="https://www.facebook.com/groups/istanbul.developers/" class="ir sprite facebook">Facebook</a> 
-            <a href="https://github.com/phpistorg" class="ir sprite github">Github</a> 
-        </div> <!-- .followUs -->
-    </div> <!-- #top -->
-
-
-    <div id="organizer" class="toCenter">
-        <h2 class="sprite"><span>Organizatör</span></h2>
-        <a href="http://phpist.org/" target="_blank"><img src="img/sponsors/phpist.png" alt="PHP-ist" class="taMiddle" /></a>
-        <a href="http://www.ubit.com.tr" target="_blank"><img src="img/sponsors/ubit.png" alt="Ubit" class="taMiddle" /></a>
-    </div>
-
-    <div id="sponsors" class="toCenter">
-        <h2 class="sprite"><span>Platin Sponsorlar</span></h2>
-        
-        <a href="http://www.enuygun.com" target="_blank"><img src="img/sponsors/enuygun.png" alt="EnUygun.com" class="taMiddle platin" /></a>
-
-        <a href="http://www.tasit.com" target="_blank"><img src="img/sponsors/tasit.png" alt="Tasit.com" class="taMiddle platin" /></a>
-        
-    </div>
-            
-    <div id="becomeSponsor" class="toCenter">
-        <h2 class="sprite"><span>Sponsorlar</span></h2>
-        <a href="data/sponsorluk.pdf"><img src="img/plus.png" alt="Sponsor Olun"/></a>
-    </div> <!-- #sponsors -->
-
-    <div id="program" class="toCenter">
-        <h2 class="sprite"><span>Konuşma Programı</span></h2>
-
-        <ul>
-            <li>
-                <a href="#">
-                    <small>09:00 - 09:30</small>
-                    <h4><em>Açılış Konuşması</em></h4>
-                    <span>php-ist</span>
-                </a>
-            </li>
-
-            <li>
-                <a href="#">
-                    <small>09:45 - 10:30</small>
-                    <h4><em>Ansible ve Vagrant ile Sunucu Kurulumu ve Yönetimi</em></h4>
-                    <span>Suat İmamoğlu</span>
-                </a>
-            </li>
-
-            <li>
-                <a href="#">
-                    <small>10:45 - 11:30</small>
-                    <h4><em>Symfony</em></h4>
-                    <span>Hugo Hamon</span>
-                </a>
-            </li>
-
-            <li class="dummy">
-                <a href="#">
-                    <small>11:45 - 12:15</small>
-                    <h4><em>Medya + Ekonomi Sunumu</em></h4>
-                    <span>?</span>
-                </a>
-            </li>
-
-            <li class="lunch dummy dummyLink">
-                <small>12:15 - 13:30</small>
-                <h4><em>Öğlen Arası</em></h4>
-            </li>
-
-
-            <li class="dummy">
-                <small>13:30 - 14:15</small>
-                <h4><em>Kod İnceleme Süreçleri</em></h4>
-                <span>Lemi Orhan Ergin</span>
-            </li>
-
-            <li class="dummy">
-                <a href="">
-                    <small>14:30 - 15:15</small>
-                    <h4><em>Capistrano ile "deployment"larınıza hakim olun</em></h4>
-                    <span>Ramazan Korkmaz</span>
-                </a>
-            </li>
-
-            <li class="dummy">
-                <a href="">
-                    <small>15:30 - 16:15</small>
-                    <h4><em>Building a Distributed Data Ingestion System with RabbitMQ</em></h4>
-                    <span>Alvaro Videla</span>
-                </a>
-            </li>
-
-            <li class="dummy">
-                <a href="?">
-                    <small>16:30 - 17:15</small>
-                    <h4><em>?</em></h4>
-                    <span>?</span>
-                </a>
-            </li>
-
-        </ul>
-
-    </div> <!-- #program -->
-
-
-    <div id="speakers" class="toCenter">
-        <h2 class="sprite"><span>Konuşmacılar</span></h2>
-
-        <ul>
-                <li>
-                    <figure>
-                        <img src="img/speakers/suat_imamoglu.jpg" alt="Suat İmamoğlu"/>
-                        <div class="socialContainer">
-                            <!--<a class="ir sprite github" href="#" target="_blank">Github</a>-->
-                            <a class="ir sprite twitter" href="#" target="https://twitter.com/suatimam">Twitter</a>
-                            <!--<a class="ir sprite web" href="#" target="_blank">Web</a>-->
-                        </div>
-                    </figure>
-                    <em>Taşıt.com</em>
-                    <strong><a href="#">Suat İmamoğlu</a></strong>
-                </li>
-                <li>
-                    <figure>
-                        <img src="img/speakers/hugo_hamon.jpg" alt="Hugo Hamon"/>
-                        <div class="socialContainer">
-                            <a class="ir sprite github" href="https://github.com/hhamon" target="_blank">Github</a>
-                            <a class="ir sprite twitter" href="https://twitter.com/hhamon" target="_blank">Twitter</a>
-                            <a class="ir sprite web" href="http://hugohamon.com/" target="_blank">Web</a>
-                        </div>
-                    </figure>
-                    <em>SensioLabs</em>
-                    <strong><a href="#">Hugo Hamon</a></strong>
-                </li>
-                <li>
-                    <figure>
-                        <img src="img/speakers/lemi_orhan_ergin.jpg" alt="Lemi Orhan Ergin"/>
-                        <div class="socialContainer">
-                            <a class="ir sprite github" href="https://github.com/lemiorhan" target="_blank">Github</a>
-                            <a class="ir sprite twitter" href="https://twitter.com/lemiorhan" target="_blank">Twitter</a>
-                            <a class="ir sprite web" href="http://www.lemiorhanergin.com/" target="_blank">Web</a>
-                        </div>
-                    </figure>
-                    <em>Sony</em>
-                    <strong><a href="/konusmaci/osman-ungur">Lemi Orhan Ergin</a></strong>
-                </li>
-        </ul>
-        <ul>
-                <li>
-                    <figure>
-                        <img src="img/speakers/ramazan_korkmaz.jpg" alt="Ramazan Korkmaz"/>
-                        <div class="socialContainer">
-                            <a class="ir sprite github" href="https://github.com/rakodev" target="_blank">Github</a>
-                            <a class="ir sprite twitter" href="https://twitter.com/rakodev" target="_blank">Twitter</a>
-                            <a class="ir sprite web" href="http://rakodev.github.io/" target="_blank">Web</a>
-                        </div>
-                    </figure>
-                    <em>EnUygun.com</em>
-                    <strong><a href="/konusmaci/mustafa-ileri">Ramazan Korkmaz</a></strong>
-                </li>
-                <li>
-                    <figure>
-                        <img src="img/speakers/alvaro_videla.jpg" alt="Alvaro Videla"/>
-                        <div class="socialContainer">
-                            <a class="ir sprite github" href="https://github.com/videlalvaro" target="_blank">Github</a>
-                            <a class="ir sprite twitter" href="https://twitter.com/old_sound" target="_blank">Twitter</a>
-                            <a class="ir sprite web" href="http://videlalvaro.github.io/" target="_blank">Web</a>
-                        </div>
-                    </figure>
-                    <em>RabbitMQ</em>
-                    <strong><a href="/konusmaci/huseyin-mert">Alvaro Videla</a></strong>
-                </li>
-            </ul>
-    </div> <!-- #speakers -->
-
-    <div id="venue" class="toCenter">
-        <h2 class="sprite"><span>Ulaşım</span></h2>
-
-        <p>
-            Etkinlik, Bahçeşehir Üniversitesi Beşiktaş Kampüsü'ndeki Konferans Salonu'nda gerçekleşecek        </p>
-
-        <div id="map">
-           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3009.239698609546!2d29.009742!3d41.041886999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7a2a2c3b963%3A0x7671d1b9817b8519!2sBah%C3%A7e%C5%9Fehir+University!5e0!3m2!1sen!2s!4v1395430987590" width="960" height="456" frameborder="0" style="border:0"></iframe>
-        </div>
-
-                <div id="busaccess">
-            <h2 class="sprite"><span>Ulaşım Yolları</span></h2> 
+            <!-- .slide -->
+            <div class="followUs">
+               Gelişmeler için bizi takip edin          
+               <a href="https://twitter.com/phpistorg">
+               <i class="fa fa-twitter"></i>
+               </a>
+               <a href="https://www.facebook.com/groups/istanbul.developers/">
+               <i class="fa fa-facebook-square"></i>
+               </a>
+               <a href="https://github.com/phpistorg">
+               <i class="fa fa-github">
+               </i>
+               </a>
+            </div>
+            <!-- .followUs -->
+         </div>
+         <!-- #top -->
+         <div id="organizer" class="toCenter">
+            <h2 class="sprite">
+               <span>
+               Organizatör
+               </span>
+            </h2>
+            <a href="http://phpist.org/" target="_blank">
+            <img src="img/sponsors/phpist.png" alt="PHP-ist" class="taMiddle" />
+            </a>
+            <a href="http://www.ubit.com.tr" target="_blank">
+            <img src="img/sponsors/ubit.png" alt="Ubit" class="taMiddle" />
+            </a>
+         </div>
+         <div id="sponsors" class="toCenter">
+            <h2 class="sprite">
+               <span>
+               Platin Sponsorlar
+               </span>
+            </h2>
+            <a href="http://www.enuygun.com" target="_blank">
+            <img src="img/sponsors/enuygun.png" alt="EnUygun.com" class="taMiddle platin" />
+            </a>
+            <a href="http://www.tasit.com" target="_blank">
+            <img src="img/sponsors/tasit.png" alt="Tasit.com" class="taMiddle platin" />
+            </a>
+         </div>
+         <div id="becomeSponsor" class="toCenter">
+            <h2 class="sprite">
+               <span>
+               Sponsorlar
+               </span>
+            </h2>
+            <a href="data/sponsorluk.pdf">
+            <img src="img/plus.png" alt="Sponsor Olun"/>
+            </a>
+         </div>
+         <!-- #sponsors -->
+         <div id="program" class="toCenter">
+            <h2 class="sprite">
+               <span>
+               Etkinlik Programı
+               </span>
+            </h2>
             <ul>
-                <li>
-                    <p><strong>Kadıköy'den gelecek katılımcılar;</strong><br />
-Kadıköy - Beşiktaş vapur iskelesinden kalkan vapur sizi beşiktaş sahile getirecektir. İndiğiniz zaman, kampüs, Ortaköy yönüne doğru ~2 dakika yürüme mesafesinde.</p><br />
-                </li>
-                <li>
-                    <p><strong>Mecidiyeköy'den gelecek katılımcılar;</strong><br />
-30M hatlı otobüs ile kampüse ulaşım gerçekleştirebilirsiniz.</p><br />
-                </li>
-                <li>
-                    <p><strong>Esenler/Otogar'dan gelecek katılımcılar;</strong><br/>
-                    <strong>1.</strong> Havalimanı - Aksaray metrosu ile aksaray, T1 Kabataş-Bağcılar tramway hattına yusufpaşa durağı (~5 dakika yürüme mesafesi) veya Aksaray durağı (~10 dakika yürüme mesafesi) kullanarak erişebilirsiniz. Kabataş'ta inerek Ortaköy yönüne giden otobüslere binebilirsiniz.
-                    <br/><br />
-                    <strong>2.</strong> Havalimanı - Aksaray metrosunu kullanarak Zentinburnu durağında Avcılar - Zincirlikuyu metrobüs hattına aktarma yapabilirsiniz. Zincirlikuyu'da indikten sonra beşiktaş ve kabataş yönüne giden her otobüs Beşiktaş meydandan geçmektedir. Ortaköy yönüne doğru ~2 dakika yürüme ile ulaşabilirsiniz.
-                    </p><br />
-                </li>
-                <li>
-                    <p><strong>Pendik'ten gelecek katılımcılar;</strong><br/>
-                    Pendik - Haydarpaşa banliyosu ile Söğütlüçeşme - Zincirlikuyu metrobüs hattına aktarma yapabilirsiniz. Zincirlikuyu'da indikten sonra beşiktaş ve kabataş yönüne giden her otobüs Beşiktaş meydandan geçmektedir. Ortaköy yönüne doğru ~2 dakika yürüme ile ulaşabilirsiniz.</p>
-                    <br/>
-                </li>
-                <li>
-                    <p><strong>Kartal'dan gelecek katılımcılar;</strong><br/>
-                    <strong>1.</strong> Pendik - Haydarpaşa banliyosu ile Söğütlüçeşme - Zincirlikuyu metrobüs hattına aktarma yapabilirsiniz. Zincirlikuyu'da indikten sonra beşiktaş ve kabataş yönüne giden her otobüs Beşiktaş meydandan geçmektedir. Ortaköy yönüne doğru ~2 dakika yürüme ile ulaşabilirsiniz.
-                    <br/><br/>
-                    <strong>2.</strong> Kadıköy - Kartal metrosunu kullanarak Kadıköy - Beşiktaş vapur iskelesine ulaşabilirsiniz. Vapur ile beşiktaş sahiline geçtikten sonra; kampüs, Ortaköy yönüne doğru ~2 dakika yürüme mesafesinde.</p>
-                    <br/>
-                </li>
-                <li>
-                    <p><strong>Yenibosna'dan gelecekler için;</strong><br/>
-                    Metrobüs ile Zincirlikuyu'da indikten sonra beşiktaş ve kabataş yönüne giden her otobüs Beşiktaş meydandan geçmektedir. Ortaköy yönüne doğru ~2 dakika yürüme ile ulaşabilirsiniz.</p>
-                    <br/>
-                </li>
-                <li>
-                    <p><strong>Fatih / Edirnekapı'dan gelecekler için;</strong><br/>
-                    28 hatlı otobüs ile Beşiktaş sahile ulaşım gerçekleştirebilirsiniz. Ortaköy yönüne doğru ~2 dakika yürüme ile ulaşabilirsiniz.
-                    </p>
-                    <br />
-                </li>
-                <li>
-                    <p><strong>Üsküdar'dan gelecekler için;</strong><br/>
-                    Üsküdar Beşiktaş motor iskelesinden beşiktaş sahile geçtikten sonra Ortaköy yönüne doğru ~2 dakika yürüme ile ulaşabilirsiniz.</p>
-                    <br/>
-                </li>
+               <li>
+                  <span class="label label-primary label-clock">
+                  <i class="fa fa-clock-o"></i>
+                  09:00 - 09:30
+                  </span>
+                  <div class="clearfix"></div>
+                  <div class="programText">
+                     <h4 class="lucida sessionTopic">
+                        <em>
+                        Açılış Konuşması
+                        </em>
+                     </h4>
+                     <div class="clearfix"></div>
+                     <span class="sessionAuthor">
+                     php-ist
+                     </span>
+                  </div>
+               </li>
+               <li>
+                  <span class="label label-primary label-clock">
+                  <i class="fa fa-clock-o"></i>
+                  09:45 - 10:30
+                  </span>
+                  <div class="clearfix"></div>
+                  <div class="programText">
+                     <h4 class="lucida sessionTopic">
+                        <em>
+                        Ansible ve Vagrant ile Sunucu Kurulumu ve Yönetimi
+                        </em>
+                     </h4>
+                     <div class="clearfix"></div>
+                     <span class="sessionAuthor">
+                     Suat İmamoğlu
+                     </span>
+                  </div>
+               </li>
+               <li>
+                  <span class="label label-primary label-clock">
+                  <i class="fa fa-clock-o"></i>
+                  10:45 - 11:30
+                  </span>
+                  <div class="clearfix"></div>
+                  <div class="programText">
+                     <h4 class="lucida sessionTopic">
+                        <em>
+                        Symfony
+                        </em>
+                     </h4>
+                     <div class="clearfix"></div>
+                     <span class="sessionAuthor">
+                     php-ist
+                     </span>
+                  </div>
+               </li>
+               <li>
+                  <span class="label label-primary label-clock">
+                  <i class="fa fa-clock-o"></i>
+                  11:45 - 12:15
+                  </span>
+                  <div class="clearfix"></div>
+                  <div class="programText">
+                     <h4 class="lucida sessionTopic">
+                        <em>
+                        Medya + Ekonomi Sunumu
+                        </em>
+                     </h4>
+                     <div class="clearfix"></div>
+                     <span class="sessionAuthor">
+                     php-ist
+                     </span>
+                  </div>
+               </li>
             </ul>
-        </diV>
-
-        <!--<div id="devpod">
-            <h2 class="sprite"><span>devPod</span></h2>
-            <div class="devpodContainer">
-                <img src="img/devpod.jpg" alt="devpod"/>
-                <div class="devpodText">
-                    <h5>devPod php-ist özel yayınları</h5>
-                    <a href="http://devpod.tumblr.com/post/53625216593/devpod-bolum-016" target="_blank">
-                        php-ist 2013 öncesi devPod röportajı
-                    </a> <br/>
-
-                   <a href="http://devpod.tumblr.com/post/54841865122/phpist-2013-bolum-1" target="_blank">
-                        php-ist 2013 etkinlik içi röportaj
-                    </a> <br/>
-
-                   <a href="http://devpod.tumblr.com/post/54844089100/phpist-2013-bolum-2" target="_blank">
-                        php-ist 2013 teknik sohbet oturumu
-                    </a>
-
-
-
+            <div class="clearfix"></div>
+            <ul>
+               <li class="lunch">
+                  <span class="label label-primary label-clock label-clock-large">
+                  <i class="fa fa-clock-o"></i>
+                  12:15 - 13:30
+                  </span>
+                  <div class="clearfix"></div>
+                  <div class="programText programTextLarge">
+                     <h4 class="lucida sessionTopic">
+                        <em>
+                        Öğle Arası
+                        </em>
+                     </h4>
+                     </a>
+                  </div>
+               </li>
+            </ul>
+            <ul>
+               <li>
+                  <span class="label label-primary label-clock">
+                  <i class="fa fa-clock-o"></i>
+                  13:30 - 14:15
+                  </span>
+                  <div class="clearfix"></div>
+                  <div class="programText">
+                     <h4 class="lucida sessionTopic">
+                        <em>
+                        Kod İnceleme Süreçleri
+                        </em>
+                     </h4>
+                     <div class="clearfix"></div>
+                     <span class="sessionAuthor">
+                     Lemi Orhan Ergin
+                     </span>
+                  </div>
+               </li>
+               <li>
+                  <span class="label label-primary label-clock">
+                  <i class="fa fa-clock-o"></i>
+                  14:30 - 15:15
+                  </span>
+                  <div class="clearfix"></div>
+                  <div class="programText">
+                     <h4 class="lucida sessionTopic">
+                        <em>
+                        Capistrano ile "deployment"larınıza hakim olun
+                        </em>
+                     </h4>
+                     <div class="clearfix"></div>
+                     <span class="sessionAuthor">
+                     Ramazan Korkmaz
+                     </span>
+                  </div>
+               </li>
+               <li>
+                  <span class="label label-primary label-clock">
+                  <i class="fa fa-clock-o"></i>
+                  15:30 - 16:15
+                  </span>
+                  <div class="clearfix"></div>
+                  <div class="programText">
+                     <h4 class="lucida sessionTopic">
+                        <em>
+                        Building a Distributed Data Ingestion System with RabbitMQ
+                        </em>
+                     </h4>
+                     <div class="clearfix"></div>
+                     <span class="sessionAuthor">
+                     Alvaro Videla
+                     </span>
+                  </div>
+               </li>
+               <li>
+                  <span class="label label-primary label-clock">
+                  <i class="fa fa-clock-o"></i>
+                  16:30 - 17:15
+                  </span>
+                  <div class="clearfix"></div>
+                  <div class="programText">
+                     <h4 class="lucida sessionTopic">
+                        <em>
+                        ?
+                        </em>
+                     </h4>
+                     <div class="clearfix"></div>
+                     <span class="sessionAuthor">
+                     php-ist
+                     </span>
+                  </div>
+               </li>
+            </ul>
+         </div>
+         <!-- #program -->
+         <div id="speakers" class="toCenter">
+            <h2 class="sprite">
+               <span>
+               Konuşmacılar
+               </span>
+            </h2>
+            <ul>
+               <li>
+                  <figure>
+                     <img src="img/speakers/suat_imamoglu.jpg" class="img-circle" alt="Suat İmamoğlu" width="150" />
+                     <div class="socialContainer hide">
+                        <a class="icon" href="#" target="https://twitter.com/suatimam">
+                        <i class="fa fa-twitter"></i>
+                        </a>
+                     </div>
+                  </figure>
+                  <em>
+                  Taşıt.com
+                  </em>
+                  <strong>
+                  <a href="#">
+                  Suat İmamoğlu
+                  </a>
+                  </strong>
+               </li>
+               <li>
+                  <figure>
+                     <img src="img/speakers/hugo_hamon.jpg" class="img-circle" alt="Hugo Hamon"/>
+                     <div class="socialContainer hide">
+                        <a class="icon" href="https://github.com/hhamon" target="_blank">
+                        <i class="fa fa-github"></i>                                    
+                        </a>
+                        <a class="icon" href="https://twitter.com/hhamon" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                        </a>
+                        <a class="icon" href="http://hugohamon.com/" target="_blank">
+                        <i class="fa fa-globe"></i>
+                        </a>
+                     </div>
+                  </figure>
+                  <em>
+                  SensioLabs
+                  </em>
+                  <strong>
+                  <a href="#">
+                  Hugo Hamon
+                  </a>
+                  </strong>
+               </li>
+               <li>
+                  <figure>
+                     <img src="img/speakers/lemi_orhan_ergin.jpg" class="img-circle" alt="Lemi Orhan Ergin" width="150" height="150" />
+                     <div class="socialContainer hide">
+                        <a class="icon" href="https://github.com/lemiorhan" target="_blank">
+                        <i class="fa fa-github"></i>                                    
+                        </a>
+                        <a class="icon" href="https://twitter.com/lemiorhan" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                        </a>
+                        <a class="icon" href="http://www.lemiorhanergin.com/" target="_blank">
+                        <i class="fa fa-globe"></i>
+                        </a>
+                     </div>
+                  </figure>
+                  <em>
+                  Sony
+                  </em>
+                  <strong>
+                  <a href="/konusmaci/osman-ungur">
+                  Lemi Orhan Ergin
+                  </a>
+                  </strong>
+               </li>
+            </ul>
+            <ul>
+               <li>
+                  <figure>
+                     <img src="img/speakers/ramazan_korkmaz.jpg" alt="Ramazan Korkmaz" class="img-circle"  width="150" height="150" />
+                     <div class="socialContainer hide">
+                        <a class="icon" href="https://github.com/rakodev" target="_blank">
+                        <i class="fa fa-github"></i>                                    
+                        </a>
+                        <a class="icon" href="https://twitter.com/rakodev" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                        </a>
+                        <a class="icon" href="http://rakodev.github.io/" target="_blank">
+                        <i class="fa fa-globe"></i>
+                        </a>
+                     </div>
+                  </figure>
+                  <em>
+                  EnUygun.com
+                  </em>
+                  <strong>
+                  <a href="/konusmaci/mustafa-ileri">
+                  Ramazan Korkmaz
+                  </a>
+                  </strong>
+               </li>
+               <li>
+                  <figure>
+                     <img src="img/speakers/alvaro_videla.png" alt="Alvaro Videla" class="img-circle"  width="150" height="150" />
+                     <div class="socialContainer hide">
+                        <a class="icon" href="https://github.com/videlalvaro" target="_blank">
+                        <i class="fa fa-github"></i>                                    
+                        </a>
+                        <a class="icon" href="https://twitter.com/old_sound" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                        </a>
+                        <a class="icon" href="http://videlalvaro.github.io/" target="_blank">
+                        <i class="fa fa-globe"></i>
+                        </a>
+                     </div>
+                  </figure>
+                  <em>
+                  RabbitMQ
+                  </em>
+                  <strong>
+                  <a href="/konusmaci/huseyin-mert">
+                  Alvaro Videla
+                  </a>
+                  </strong>
+               </li>
+            </ul>
+         </div>
+         <!-- #speakers -->
+         <div id="venue" class="toCenter">
+            <h2 class="sprite">
+               <span>
+               Ulaşım
+               </span>
+            </h2>
+            <div class="venueAdress">
+                <i class="pull-left fa fa-map-marker"></i>
+                <div class="venueText">
+                    Bahçeşehir Üniversitesi<br/>
+                    Çırağan Caddesi Osmanpaşa Mektebi Sokak No: 4 - 6
+                    <br/> 
+                    34353 Beşiktaş, İstanbul
                 </div>
             </div>
-        </div> #devpod -->
+            <div id="map">
+               <iframe src="https://www.google.com/maps/embed?iwloc=near&amp;output=embed&amp;pb=!1m14!1m8!1m3!1d3009.239698609546!2d29.009742!3d41.041886999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7a2a2c3b963%3A0x7671d1b9817b8519!2sBah%C3%A7e%C5%9Fehir+University!5e0!3m2!1sen!2s!4v1395430987590" width="960" height="456" frameborder="0" style="border:0">
+               </iframe>
+            </div>
+            <div id="busaccess">
+               <h2 class="sprite">
+                  <span>
+                  Ulaşım Yolları
+                  </span>
+               </h2>
 
-        
+               <div class="alert alert-info">
+                <strong>
+                        Kadıköy'den gelecek katılımcılar;
+                        </strong>
+                        <br />
+                        Kadıköy - Beşiktaş vapur iskelesinden kalkan vapur sizi beşiktaş sahile getirecektir. İndiğiniz zaman, kampüs, Ortaköy yönüne doğru ~2 dakika yürüme mesafesinde.
+                </div>
 
+                <div class="alert alert-info">
+                <strong>
+                        Mecidiyeköy'den gelecek katılımcılar;
+                        </strong>
+                        <br />
+                        30M hatlı otobüs ile kampüse ulaşım gerçekleştirebilirsiniz.
+                </div>
 
-    <!--<div id="supporters">
-        <h2 class="sprite"><span>Destekleyenler</span></h2>
-        <ul>
-            <li>
-               <a href="http://bmo.org.tr" target="_blank"><img src="img/sponsors/bmo.png" alt="Bilgisyar Mühendisleri Odası"/></a>
-            </li>
-            <li>
-                <a href="http://www.panilux.com/" target="_blank"><img src="img/sponsors/panilux.png" alt="Panilux Server Management Panel"/></a>
-            </li>
+                <div class="alert alert-info">
+               <strong>
+                        Esenler/Otogar'dan gelecek katılımcılar;
+                        </strong>
+                        <br/>
+                        <strong>
+                        1.
+                        </strong>
+                        Havalimanı - Aksaray metrosu ile aksaray, T1 Kabataş-Bağcılar tramway hattına yusufpaşa durağı (~5 dakika yürüme mesafesi) veya Aksaray durağı (~10 dakika yürüme mesafesi) kullanarak erişebilirsiniz. Kabataş'ta inerek Ortaköy yönüne giden otobüslere binebilirsiniz.
+                        <br/>
+                        <br />
+                        <strong>
+                        2.
+                        </strong>
+                        Havalimanı - Aksaray metrosunu kullanarak Zentinburnu durağında Avcılar - Zincirlikuyu metrobüs hattına aktarma yapabilirsiniz. Zincirlikuyu'da indikten sonra beşiktaş ve kabataş yönüne giden her otobüs Beşiktaş meydandan geçmektedir. Ortaköy yönüne doğru ~2 dakika yürüme ile ulaşabilirsiniz.
+                </div>
 
+                <div class="alert alert-info">
+                <strong>
+                        Pendik'ten gelecek katılımcılar;
+                        </strong>
+                        <br/>
+                        Pendik - Haydarpaşa banliyosu ile Söğütlüçeşme - Zincirlikuyu metrobüs hattına aktarma yapabilirsiniz. Zincirlikuyu'da indikten sonra beşiktaş ve kabataş yönüne giden her otobüs Beşiktaş meydandan geçmektedir. Ortaköy yönüne doğru ~2 dakika yürüme ile ulaşabilirsiniz.
+                </div>
 
-            <li>
-                <a href="http://www.indir.com/" target="_blank"><img src="img/sponsors/indir.png" alt="indir.com"/></a>
-            </li>
+                <div class="alert alert-info">
+                <strong>
+                        Kartal'dan gelecek katılımcılar;
+                        </strong>
+                        <br/>
+                        <strong>
+                        1.
+                        </strong>
+                        Pendik - Haydarpaşa banliyosu ile Söğütlüçeşme - Zincirlikuyu metrobüs hattına aktarma yapabilirsiniz. Zincirlikuyu'da indikten sonra beşiktaş ve kabataş yönüne giden her otobüs Beşiktaş meydandan geçmektedir. Ortaköy yönüne doğru ~2 dakika yürüme ile ulaşabilirsiniz.
+                        <br/>
+                        <br/>
+                        <strong>
+                        2.
+                        </strong>
+                        Kadıköy - Kartal metrosunu kullanarak Kadıköy - Beşiktaş vapur iskelesine ulaşabilirsiniz. Vapur ile beşiktaş sahiline geçtikten sonra; kampüs, Ortaköy yönüne doğru ~2 dakika yürüme mesafesinde.
+                </div>
 
-            <li>
-                <a href="http://www.rgbilisim.com/" target="_blank"><img src="img/sponsors/rg.png" alt="RG Bilişim"/></a>
-            </li>
+                <div class="alert alert-info">
+                <strong>
+                        Yenibosna'dan gelecekler için;
+                        </strong>
+                        <br/>
+                        Metrobüs ile Zincirlikuyu'da indikten sonra beşiktaş ve kabataş yönüne giden her otobüs Beşiktaş meydandan geçmektedir. Ortaköy yönüne doğru ~2 dakika yürüme ile ulaşabilirsiniz.
+                </div>
 
-            <li>
-                <a href="http://www.webmagazin.co/" target="_blank"><img src="img/sponsors/webmagazin.png" alt="WebMagazin"/></a>
-            </li>
+                <div class="alert alert-info">
+                 <strong>
+                        Fatih / Edirnekapı'dan gelecekler için;
+                        </strong>
+                        <br/>
+                        28 hatlı otobüs ile Beşiktaş sahile ulaşım gerçekleştirebilirsiniz. Ortaköy yönüne doğru ~2 dakika yürüme ile ulaşabilirsiniz.
 
+                </div>
+                <div class="alert alert-info">
+                <strong>
+                        Üsküdar'dan gelecekler için;
+                        </strong>
+                        <br/>
+                        Üsküdar Beşiktaş motor iskelesinden beşiktaş sahile geçtikten sonra Ortaköy yönüne doğru ~2 dakika yürüme ile ulaşabilirsiniz.
+                </div>
 
-            <li>
-                <a href="http://www.valven.com/" target="_blank"><img src="img/sponsors/valven.png" alt="Valven"/></a>
-            </li>
-
-            <li>
-                <a href="http://www.pgd.org.tr/" target="_blank"><img src="img/sponsors/pgd.png" alt="PHP Geliştiricileri Derneği"/></a>
-            </li>
-
-            <li>
-                <a href="http://www.jstanbul.org/" target="_blank"><img src="img/sponsors/jstanbul.png" alt="jstanbul"/></a>
-            </li>
-
-
-            <li>
-                <a href="http://devpod.tumblr.com/" target="_blank"><img src="img/sponsors/devpod.jpg" alt="devpod"/></a>
-            </li>
-
-
-            <li>
-                <a href="http://webdeders.com/" target="_blank"><img src="img/sponsors/webdeders.png" alt="webdeders"/></a>
-            </li>
-
-            <li>
-                <a href="https://www.facebook.com/WPTurkiye" target="_blank"><img src="img/sponsors/wptr.png" alt="WordPress Türkiye"/></a>
-            </li>
-
-            <li>
-                <a href="http://www.vidcodigital.com" target="_blank"><img src="img/sponsors/vidco.png" alt="Vidco Digital"/></a>
-           </li>
-
-            <li>
-            <a href="http://www.seckin.com.tr/browser/onx/1/fs/1,2/fk/245987249/fy/434328699/sf/1/pl/100/w/1/fsp/0/sx/6" target="_blank"><img src="img/sponsors/seckin.png" alt="Seçkin"/></a>
-            </li>
-
-
-        </ul>
-    </div>-->
-
-
-
-    </div> <!-- #contact -->
-
-            <div id="fakeFooter"></div>
-        </div> <!-- #contentAboveFooter -->
-
-        <footer>
-            <span id="mascot" class="sprite ir">Maskot</span>
-            <div class="toCenter">
-                <small>php-ist 2014</small>
-
-                <div id="designer">
-                    Tasarım: <a target="_blank" href="http://www.ethembudak.com/">Ethem Budak</a>                </div>
-            </div> <!-- .toCenter -->
-        </footer>
-
-        <script type="text/javascript" src="js/external/jquery-1.8.3.js"></script>
-        <script type="text/javascript" src="js/external/jquery.scrollTo-1.4.3.1-min.js"></script>
-        <script type="text/javascript" src="js/external/jquery.history.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
-
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-41578800-1', 'phpist.org');
-          ga('send', 'pageview');
-        </script>
-    </body>
+            </diV>
+         </div>
+         <!-- #contact -->
+         <div id="fakeFooter"></div>
+      </div>
+      <!-- #contentAboveFooter -->
+      <footer>
+         <span id="mascot" class="sprite ir">
+         Maskot
+         </span>
+         <div class="toCenter">
+            <small>
+            php-ist 2014
+            </small>
+            <div id="designer">
+               Tasarım: 
+               <a target="_blank" href="http://www.ethembudak.com/">
+               Ethem Budak
+               </a>
+            </div>
+         </div>
+         <!-- .toCenter -->
+      </footer>
+      <script type="text/javascript" src="js/external/jquery-1.8.3.js"></script>
+      <script type="text/javascript" src="js/external/jquery.scrollTo-1.4.3.1-min.js"></script>
+      <script type="text/javascript" src="js/external/jquery.history.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
+      <script>
+         (function(i,s,o,g,r,a,m){
+           i['GoogleAnalyticsObject']=r;
+           i[r]=i[r]||function(){
+             (i[r].q=i[r].q||[]).push(arguments)}
+             ,i[r].l=1*new Date();
+             a=s.createElement(o),
+             m=s.getElementsByTagName(o)[0];
+             a.async=1;
+             a.src=g;
+             m.parentNode.insertBefore(a,m)
+         }
+         )(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+         
+         ga('create', 'UA-41578800-1', 'phpist.org');
+         ga('send', 'pageview');
+      </script>
+   </body>
 </html>

@@ -22,16 +22,17 @@
     color: #FFF;
     font-weight: bold;
     line-height: 50px;
+    font-size: 22px;
 }
 
-
 #top .followUs a{
-    display: inline-block;
-    width: 40px; 
-    height: 30px;
-    position: relative;
-    top: 12px;
-    margin: 0 10px 0 5px;
+    font-size: 30px;
+    color:#fff;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#top .followUs a:hover{
+    text-decoration: none !important;
 }
 
 
@@ -65,7 +66,9 @@
 #top h3 {
     color: #009add;
 }
-
+#top h1{
+    font-size: 36px !important;
+}
 #top .text #info {
     position: relative;
     top: 70px;
@@ -75,8 +78,7 @@
 }
 
 #top .text #info p {
-    font-family: Tahoma;
-    font-size: 14px;
+    font-size: 16px;
 }
 #registerRedButton {
     position: relative;
